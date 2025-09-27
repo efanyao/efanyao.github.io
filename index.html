@@ -1,71 +1,139 @@
-<html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>efan's page</title>
-  </head>
-  <body>    
-    <table width="800" border="0">
-      <tr>
-        <td colspan="2" style="background-color:#66CCFF;">
-          <h1>Welcome to my page!</h1>
-        </td>
-      </tr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>efan's page</title>
+  <style>
+    /* Basic styling for the entire page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
 
-      <tr>
-        <td colspan="2" style="background-color:#52BE80;">
-          <a href="index.html">
-            <i> Intro </i>
-          </a>
-          &nbsp;&nbsp;
-          <a href="MathPhys.html">
-            <i> Math&Phys </i>
-          </a>
-          &nbsp;&nbsp;
-          <a href="Music.html">
-            <i> Music </i>
-          </a>
-          &nbsp;&nbsp;
-          <a href="Dialects.html">
-            <i> Dialects </i>
-          </a>
-          &nbsp;&nbsp;
-          <a href="Travel.html">
-            <i> Travel </i>
-          </a>
-        </td>
-      </tr>
-      
-      <tr>
-        <td style="background-color:#FFD700;width:300px;height:400px;vertical-align:top;">
-          <img src="img1.jpg" alt="me" width="300" height="400">
-        </td>
-        <td style="background-color:#33FFCC;height:400px;width:500px;vertical-align:center;">
-          <h3 style="margin-bottom:0;">
-            Name: <b>Yifan Yao 姚一凡</b><br>
-            Major: Mathematics<br>
-            Hometown: Anhui&Guangxi, China<br>
-            College: Tsinghua University<br>
-          </h3>
-        </td>
-      </tr>
+    /* Container for the main content */
+    .container {
+      max-width: 960px; /* Sets a maximum width for large screens */
+      margin: 20px auto; /* Centers the container */
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-      <tr>
-        <td colspan="2" style="background-color:#66FF99;width:800px;height:200px;text-align:left;">
-          <h4 style="margin-bottom:0;">
-            Current Non-research Interest:<br>
-          </h4>
-            1.Math&Phys: String theory and Landlands program. Focus on finding "unifying theory" of phys and math. Certainly I take the reality into account.<br>
-            2.AI: Robotics and quantum machine learning. Focus on constructing an intelligence beyond the current ones, mostly inspired by math&phys.
-          <br><br>
-          <h4 style="margin-bottom:0;">
-            Other highly-non-research interest:<br>
-          </h4>
-            Playing guitar and some other instruments, and singing. Learning Chinese dialects. Wearing Hawaiian shirts.<br>
-            Remark: You could cultivate all kinds of hobbies once you had enough money. Time and Talents are secondary.<br>
-        </td>
-      </tr>
-    </table>
-    
-  </body>
+    /* Styling for the header */
+    header {
+      text-align: center;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #ddd;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #0056b3;
+    }
+
+    /* Styling for the navigation menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #0056b3;
+      font-weight: bold;
+    }
+
+    /* Section styling */
+    section {
+      padding: 20px 0;
+      line-height: 1.6;
+    }
+
+    /* Profile image styling */
+    .profile-img {
+      display: block;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%; /* Makes the image circular */
+      margin: 0 auto 15px; /* Centers the image */
+      object-fit: cover; /* Ensures the image fills the circle */
+      border: 3px solid #0056b3;
+    }
+
+    /* Styling for the footer */
+    footer {
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid #ddd;
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    /* Media queries for responsiveness */
+    @media (max-width: 600px) {
+      .container {
+        margin: 10px;
+        padding: 10px;
+      }
+
+      nav ul li {
+        display: block; /* Stacks navigation links vertically on small screens */
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src=“img1.jpg” alt="Profile Picture" class="profile-img">
+      <h1>Yifan Yao 姚一凡</h1>
+      <p>[Your Title or Tagline]</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate developer with expertise in web technologies. I enjoy creating
+        clean and efficient code and am always eager to learn new things.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <ul>
+        <li><strong>Project 1:</strong> A brief description of your project.</li>
+        <li><strong>Project 2:</strong> A brief description of your project.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+  </footer>
+</body>
 </html>
