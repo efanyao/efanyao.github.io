@@ -3,114 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>efan's page</title>
+  <title>My Personal Page</title>
   <style>
-    /* Basic styling for the entire page */
+    /* General body styling */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
       color: #333;
     }
 
-    /* Container for the main content */
-    .container {
-      max-width: 960px; /* Sets a maximum width for large screens */
-      margin: 20px auto; /* Centers the container */
-      padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Container for the two-column layout */
+    .two-column-layout {
+      display: flex;
+      min-height: 100vh;
     }
 
-    /* Styling for the header */
-    header {
+    /* Left sidebar styling */
+    .left-sidebar {
+      width: 280px;
+      background-color: #2c3e50; /* A dark, professional background color */
+      color: #ecf0f1;
+      padding: 40px 20px;
+      box-sizing: border-box; /* Includes padding in the width calculation */
       text-align: center;
-      padding-bottom: 20px;
-      border-bottom: 2px solid #ddd;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-      color: #0056b3;
+    .left-sidebar h2 {
+      margin-top: 0;
+      font-size: 1.5em;
     }
 
-    /* Styling for the navigation menu */
-    nav ul {
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #3498db; /* A contrasting border color */
+      margin-bottom: 20px;
+    }
+
+    /* Navigation styling within the sidebar */
+    .sidebar-nav ul {
       list-style-type: none;
       padding: 0;
-      text-align: center;
     }
 
-    nav ul li {
-      display: inline-block;
-      margin: 0 15px;
-    }
-
-    nav ul li a {
+    .sidebar-nav ul li a {
       text-decoration: none;
-      color: #0056b3;
-      font-weight: bold;
+      color: #ecf0f1;
+      display: block;
+      padding: 10px;
+      font-size: 1.1em;
+      transition: background-color 0.3s;
     }
 
-    /* Section styling */
-    section {
-      padding: 20px 0;
+    .sidebar-nav ul li a:hover {
+      background-color: #34495e;
+      border-radius: 5px;
+    }
+
+    /* Right content area styling */
+    .right-content {
+      flex-grow: 1; /* This makes it fill the rest of the space */
+      padding: 40px;
+      background-color: #ecf0f1; /* Light background for the content */
+    }
+
+    .right-content h1 {
+      font-size: 4em;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+    
+    .right-content p {
+      font-size: 1.2em;
       line-height: 1.6;
     }
 
-    /* Profile image styling */
-    .profile-img {
-      display: block;
-      width: 150px;
-      height: 150px;
-      border-radius: 50%; /* Makes the image circular */
-      margin: 0 auto 15px; /* Centers the image */
-      object-fit: cover; /* Ensures the image fills the circle */
-      border: 3px solid #0056b3;
-    }
-
-    /* Styling for the footer */
-    footer {
-      text-align: center;
-      padding: 10px;
-      border-top: 1px solid #ddd;
-      margin-top: 20px;
-      font-size: 0.9em;
-      color: #666;
-    }
-
-    /* Media queries for responsiveness */
-    @media (max-width: 600px) {
-      .container {
-        margin: 10px;
-        padding: 10px;
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+      .two-column-layout {
+        flex-direction: column;
       }
-
-      nav ul li {
-        display: block; /* Stacks navigation links vertically on small screens */
-        margin: 10px 0;
+      .left-sidebar {
+        width: 100%;
+        padding: 20px;
+      }
+      .right-content {
+        padding: 20px;
+      }
+      .right-content h1 {
+        font-size: 2.5em; /* Smaller font size on mobile */
       }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <img src=“img1.jpg” alt="Profile Picture" class="profile-img">
-      <h1>Yifan Yao 姚一凡</h1>
-      <p>from <strong>Anhui/Guangxi, China</strong></p>
-      <nav>
+
+  <div class="two-column-layout">
+
+    <aside class="left-sidebar">
+      <img src="https://via.placeholder.com/150" alt="Profile Photo" class="profile-photo">
+      <h2>Yifan Yao</h2>
+      <p>路漫漫其修远兮</p>
+      
+      <nav class="sidebar-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="#career">Career</a></li>
           <li><a href="moments.html">Moments</a></li>
         </ul>
       </nav>
-    </header>
+    </aside>
 
-    <section id="career">
+    <main class="right-content">
+      <section id="career">
       <h2>Career Goals</h2>
       <p>
         My current possible career goals can be generally divided into three dimensions:
@@ -132,9 +140,9 @@
         <li><strong>None:</strong> Sadly, I have no good work by far.</li>
       </ul>
     </section>
+    </main>
+
   </div>
-  <footer>
-    <p>&copy; 2025 [Yifan Yao]. All rights reserved.</p>
-  </footer>
+
 </body>
 </html>
