@@ -1,56 +1,140 @@
-<html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>efan in music</title>
-  </head>
-  <body>    
-    <table width="800" border="0">
-      <tr>
-        <td colspan="2" style="background-color:#66CCFF;">
-          <h1>Music</h1>
-        </td>
-      </tr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>efan's page</title>
+  <style>
+    /* Basic styling for the entire page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
 
-      <tr>
-        <td colspan="2" style="background-color:#66CCFF;">
-          <a href="index.html">
-            <i> Intro </i>
-          </a>
-          "&nbsp;&nbsp;"
-          <a href="MathPhys.html">
-            <i> Math&Phys </i>
-          </a>
-          "&nbsp;&nbsp;"
-          <a href="Music.html">
-            <i> Music </i>
-          </a>
-          "&nbsp;&nbsp;"
-          <a href="Dialects.html">
-            <i> Dialects </i>
-          </a>
-          "&nbsp;&nbsp;"
-          <a href="Travel.html">
-            <i> Travel </i>
-          </a>
-        </td>
-      </tr>
-    
-      <tr>
-        <td colspan="2" style="background-color:#66FF99;width:800px;height:200px;text-align:left;">
-          <h4 style="margin-bottom:0;">
-            Research interest:<br>
-          </h4>
-            My current interest lies in the mathematical physics, such as Gromov-Witten theory, mirror symmetry and deformation quantization. By the by, I'm a fan of Maxim Kontsevich!
-          <br><br>
-          <h4 style="margin-bottom:0;">
-            Other interest:<br>
-          </h4>
-            I spend much time on sports, like running, diving, and swimming. Also I am learning some Chinese dialects(广州话、厦门话) and meridian system in traditional Chinese medicine. I dreamt being
-           a composer , a singer, or a novelist at my early age, but they seem too far from my current chosen career.<br>
-        </td>
-      </tr>
-    </table>
-    
-  </body>
+    /* Container for the main content */
+    .container {
+      max-width: 960px; /* Sets a maximum width for large screens */
+      margin: 20px auto; /* Centers the container */
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Styling for the header */
+    header {
+      text-align: center;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #ddd;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #0056b3;
+    }
+
+    /* Styling for the navigation menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #0056b3;
+      font-weight: bold;
+    }
+
+    /* Section styling */
+    section {
+      padding: 20px 0;
+      line-height: 1.6;
+    }
+
+    /* Profile image styling */
+    .profile-img {
+      display: block;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%; /* Makes the image circular */
+      margin: 0 auto 15px; /* Centers the image */
+      object-fit: cover; /* Ensures the image fills the circle */
+      border: 3px solid #0056b3;
+    }
+
+    /* Styling for the footer */
+    footer {
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid #ddd;
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    /* Media queries for responsiveness */
+    @media (max-width: 600px) {
+      .container {
+        margin: 10px;
+        padding: 10px;
+      }
+
+      nav ul li {
+        display: block; /* Stacks navigation links vertically on small screens */
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src=“img1.jpg” alt="Profile Picture" class="profile-img">
+      <h1>Yifan Yao 姚一凡</h1>
+      <p>from <strong>Anhui/Guangxi, China</strong></p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#career">Career</a></li>
+          <li><a href="moments.html">Moments</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="career">
+      <h2>Career Goals</h2>
+      <p>
+        My current possible career goals can be generally divided into three dimensions:
+      </p>
+      <p>
+	1. Find connections between physics and mathematics, especially in string theory.
+      </p>
+      <p>
+	2. Construct an intelligence beyond the current ones, better linked with quantum physics.
+      </p>
+      <p>
+	3. Launch a startup. (This could be far later)
+      </p>
+    </section>
+
+    <section id="work">
+      <h2>Work</h2>
+      <ul>
+        <li><strong>None:</strong> Sadly, I have no good work by far.</li>
+      </ul>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2025 [Yifan Yao]. All rights reserved.</p>
+  </footer>
+</body>
 </html>
