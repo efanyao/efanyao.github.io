@@ -6,23 +6,13 @@
   <title>efan's moments</title>
   <style>
     /* General body styling */
-  body {
- 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient-animation 15s ease infinite;
-  }
 
-  @keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
     }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
 
     /* Container for the two-column layout */
     .two-column-layout {
@@ -76,9 +66,22 @@
 
     /* Right content area styling */
     .right-content {
-      flex-grow: 1; /* This makes it fill the rest of the space */
-      padding: 40px;
-      background-color: #ecf0f1; /* Light background for the content */
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient-animation 15s ease infinite;
+    }
+
+	  
+    @keyframes gradient-animation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
     }
 
     .right-content h1 {
